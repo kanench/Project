@@ -1,0 +1,29 @@
+package example1;
+
+import java.util.Scanner;
+
+public class example1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int myNumber,sum = 0;
+		
+		double myDouble;
+		char myChar = 'a';
+		int[] number = new int[10];
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter Size of Array");
+		myNumber = scan.nextInt();
+		
+		for (int x = 0; x <10 ; x++){
+			sum += number[x];
+		}
+		
+		
+		
+	}
+
+}

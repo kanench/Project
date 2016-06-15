@@ -1,0 +1,13 @@
+
+public class Rectangle1 extends Rectangle {
+
+	public double deepness;
+
+	public Rectangle1(double width, double height, double hardness) {
+		super(width, height);
+		this.Rectangle1 = hardness;
+	}
+	
+	public double 
+
+}

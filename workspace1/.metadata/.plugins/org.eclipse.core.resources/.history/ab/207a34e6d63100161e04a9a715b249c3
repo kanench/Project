@@ -1,0 +1,16 @@
+
+public class Machine implements Info{
+	
+	int id;
+
+	public Machine(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public void showinfo() {
+		System.out.println("My name is : " + id);
+		
+	}
+
+}

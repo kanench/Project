@@ -1,0 +1,13 @@
+package sample1;
+
+public class test2 {
+	    public static void main(String argv[]){
+	    	String s=new String("Java");
+	    	System.out.println(s.indexOf('v'));
+	   
+
+	}
+
+
+}
+;

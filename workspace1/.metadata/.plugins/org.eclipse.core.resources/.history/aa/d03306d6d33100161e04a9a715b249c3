@@ -1,0 +1,15 @@
+
+public class Robot {
+		double id;
+		
+		public class Brain{
+			public void think(){
+				System.out.println("Robot " + id +"is thniking....");
+			}
+		}	
+		
+		public Robot(double id) {
+			this.id = id;
+		}
+
+}

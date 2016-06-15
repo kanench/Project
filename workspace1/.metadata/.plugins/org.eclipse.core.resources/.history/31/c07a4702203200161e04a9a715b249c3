@@ -1,0 +1,25 @@
+package sample1;
+
+class sup{
+    sup(int i){
+	System.out.println("base constructor");
+    }
+    sup(){
+    }
+}
+
+public class Base extends sup{
+    public static void main(String argv[]){
+	Sup s= new Sup();
+	//One
+    }
+    Sup()
+    {
+	//Two
+    }
+
+    public void derived()
+    {
+	//Three
+    }
+}

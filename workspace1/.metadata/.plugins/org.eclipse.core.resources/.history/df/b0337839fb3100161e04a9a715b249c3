@@ -1,0 +1,13 @@
+
+public class AppRuntime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String text = null;
+		System.out.println(text.length());
+	
+		int i = 6/0;
+		System.out.println("passed,");
+	}
+
+}

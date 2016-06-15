@@ -1,0 +1,35 @@
+
+public class TestMyPoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyPoint start = new MyPoint();
+		MyPoint end = new MyPoint();
+		MyPoint stray = new MyPoint();
+		
+		start.x = 10;
+		start.y = 10;
+		
+		end.x = 20;
+		end.y = 30;
+		
+		stray = end;
+		
+		System.out.println("Start point is "+ start);
+		System.out.println("End point is "+ end);
+		System.out.println();
+		System.out.println("Stray point is "+ stray);
+		System.out.println("End point is "+ end);
+		System.out.println();
+		
+		end.x = 47;
+		end.y = 30;
+		
+		stray = end;
+		System.out.println("Stray point is "+ stray);
+		System.out.println("End point is "+ end);
+		System.out.println("Start point is "+ start);
+	}
+
+}
+	

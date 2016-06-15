@@ -1,0 +1,20 @@
+
+public class TestMyPoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyPoint start = new MyPoint();
+		MyPoint end = new MyPoint();
+		
+		start.x = 10;
+		start.y = 10;
+		
+		end.x = 20;
+		end.y = 30;
+		
+		System.out.println("Start point is "+ start);
+		
+
+	}
+
+}
