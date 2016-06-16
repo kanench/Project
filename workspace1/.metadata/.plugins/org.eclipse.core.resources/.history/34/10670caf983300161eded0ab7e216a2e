@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.oocl.mnlbc.group3;
+
+import java.util.List;
+
+/**
+ * @author KANENCH
+ *
+ */
+public class Warehouse {
+	
+	List<Product> productSelection;
+	
+
+	
+}

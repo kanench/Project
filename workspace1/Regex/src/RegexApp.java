@@ -10,6 +10,7 @@ public class RegexApp {
 		checkPhone();
 		replaceA();
 		dateExtract();
+		sampleRegex();
 
 	}
 
@@ -35,26 +36,39 @@ public class RegexApp {
 			System.out.println("Invalid Phone Number ");
 		}
 	}
-
-	public static void replaceA() {
+	
+	public static void replaceA(){
 		String input = "adamson asia pacific";
 		Pattern p = Pattern.compile("[a]");
-
 		String matcher = p.matcher(input).replaceAll("A");
 		System.out.println(matcher);
+		
+		
+		System.out.println(128>>4);
+		System.out.println(128>>>4);
 
 	}
-
-	public static void dateExtract() {
-
+	
+	public static void dateExtract(){
+		
 		String input = "Tue Jun 14 21:30:31 CST 2016";
-		Pattern p = Pattern
-				.compile("Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec");
-
+		Pattern p = Pattern.compile("Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec");
+		
 		Matcher m = p.matcher(input);
-		if (m.find()) {
+		if (m.find()){
 			System.out.println(m.group());
 		}
 	}
-
+	
+	public static void sampleRegex(){
+		String input = "abcd";
+		Pattern p = Pattern.compile("[a-z]+");
+		
+		Matcher m = p.matcher(input);
+		if (m.matches()){
+			System.out.println("Valid String Format");
+		} else {
+			System.out.println("Invalid String Format");
+		}
+	}
 }

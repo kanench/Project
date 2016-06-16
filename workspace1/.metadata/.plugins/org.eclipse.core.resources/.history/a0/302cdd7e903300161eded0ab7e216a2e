@@ -1,0 +1,71 @@
+/**
+ * 
+ */
+package com.oocl.mnlbc.group3;
+
+/**
+ * Product Model Class
+ * 
+ * @author YUME
+ * @author2 Group3
+ * @version 1
+ */
+public class Product {
+
+	private String productName;
+	private int productId;
+	private int inStock;
+	private double price;
+	private String productDesc;
+
+	public Product(String productName, int productId, int stocks, double price,
+			String productDesc) {
+		
+		this.productName = productName;
+		this.productId = productId;
+		this.inStock = inStock;
+		this.price = price;
+		this.productDesc = productDesc;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+	public int getStocks() {
+		return inStock;
+	}
+
+	public void setStocks(int stocks) {
+		this.inStock = stocks;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public String getProductDesc() {
+		return productDesc;
+	}
+
+	public void setProductDesc(String productDesc) {
+		this.productDesc = productDesc;
+	}
+
+}

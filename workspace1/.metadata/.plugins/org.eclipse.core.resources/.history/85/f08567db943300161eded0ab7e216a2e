@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.oocl.mnlbc.group3.util;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @author KANENCH
+ *
+ */
+public class Validators {
+
+	public static void checkEmail() {
+		String input = "cjkanen29@.gmail.com";
+		Pattern p = Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+				+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+		Matcher matcher = p.matcher(input);
+		if (matcher.matches()) {
+			System.out.println("Valid Email Format ");
+		} else {
+			System.out.println("Invalid Email Format ");
+		}
+	}
+	
+	
+}

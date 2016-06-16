@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class FactorialApp {
-
+/**
+ * 
+ * @param args
+ */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -12,7 +15,11 @@ public class FactorialApp {
 		n = scan.nextInt();
 
 		System.out.println("The Factorial of " + n + " is " + doFactorial(n));
-
+		
+	
+		
+		System.out.println(Integer.toOctalString(n));
+		
 	}
 
 	public static int doFactorial(int n) {
@@ -23,3 +30,4 @@ public class FactorialApp {
 		return n * doFactorial(n - 1);
 	}
 }
+

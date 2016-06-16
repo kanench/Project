@@ -1,0 +1,108 @@
+package com.oocl.mnlbc.group3;
+
+import java.util.Scanner;
+import com.oocl.mnlbc.group3.util.*;
+
+public class Shopping {
+
+	static Customer cust;
+	static Scanner input;
+
+	public static void main(String[] args) {
+
+		input = new Scanner(System.in);
+		System.out.println("Welcome to Kanen Online Shopping!");
+
+		registerUser();
+		displayOptions();
+		readOption();
+	}
+
+	public static void registerUser() {
+		Validators validate = new Validators();
+		System.out.println("Register now!");
+
+		String firstName;
+		String lastName;
+		String userName;
+		String emailAddress;
+		String mobileNumber;
+		int balance;
+		System.out.println("Enter your first name: ");
+		firstName = input.nextLine();
+		System.out.println("Enter your last name: ");
+		lastName = input.nextLine();
+		System.out.println("Enter a user name: ");
+		userName = input.nextLine();
+		do {
+			System.out.println("Enter your email address: ");
+			emailAddress = input.nextLine();
+		} while (!validate.checkEmail(emailAddress));
+		do {
+			System.out.println("Enter your mobile number: ");
+			mobileNumber = input.nextLine();
+		} while (!validate.checkPhone(mobileNumber));
+
+		System.out.println("Enter your balance: ");
+		balance = input.nextInt();
+		cust = new Customer(1, firstName, lastName, userName, emailAddress,
+				mobileNumber, balance);
+
+		System.out.println();
+		System.out.println(cust.toString());
+		System.out.println();
+	}
+
+	public static void placeOrder() {
+
+	}
+
+	public static void addBalance() {
+		System.out.print("How much balance will you add?: $");
+		Scanner input = new Scanner(System.in);
+		int amount = 0;
+		amount = input.nextInt();
+
+		cust.setBalance(amount + cust.getBalance());
+		System.out.println(cust.getBalance());
+
+	}
+
+	public static void displayOptions() {
+
+		System.out.println("Please select transaction: [1-5]");
+		System.out.println("1.) Shop Now!");
+		System.out.println("2.) Check our products!");
+		System.out.println("3.) Check your balance.");
+		System.out.println("4.) Deposit additional balance.");
+		System.out.println("5.) Logout.");
+
+	}
+
+	public static void readOption() {
+		boolean inputValid = false;
+		int choiceNum;
+		String choiceStr;
+		
+		do {
+
+			
+			choiceStr = input.nextLine();
+			choiceNum = Integer.parseInt(choiceStr);
+
+			if ((choiceNum > 0) || (choiceNum < 6)) {
+				inputValid = true;
+			}
+		} while (!inputValid);
+
+	}
+
+	public static void checkBalance() {
+
+	}
+
+	public static void displayProduct() {
+
+	}
+
+}

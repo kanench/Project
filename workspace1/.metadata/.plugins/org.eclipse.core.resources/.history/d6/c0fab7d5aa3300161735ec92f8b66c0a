@@ -1,0 +1,54 @@
+package com.oocl.mnlbc.group3;
+
+import java.awt.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import com.oocl.mnlbc.group3.transaction.ShoppingTransaction;
+import com.oocl.mnlbc.group3.util.Validators;
+
+public class Shopping {
+
+	static Customer cust;
+	static BufferedReader input;
+	static ShoppingTransaction txn; 
+
+	public static void main(String[] args) throws IOException {
+		input = new BufferedReader(new InputStreamReader(System.in));
+		txn = new ShoppingTransaction();
+		System.out.println("Welcome to Kanen Online Shopping!");
+		String option;
+		txn.registerUser();
+
+		do {
+			txn.displayOptions();
+			option = txn.readOption();
+			switch (option) {
+			case "1":
+				txn.placeAnOrder();
+				break;
+			case "2":
+				txn.displayProduct();
+				break;
+			case "3":
+				txn.checkBalance();
+				break;
+			case "4":
+				txn.addBalance();
+				break;
+			case "5":
+				System.out.println("Logged out!");
+				System.exit(0);
+				break;
+			default:
+				break;
+			}
+			System.out.println("");
+		} while (!option.equals("5"));
+
+	}
+
+
+}

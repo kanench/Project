@@ -1,0 +1,136 @@
+package com.oocl.mnlbc.group3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+import com.oocl.mnlbc.group3.util.Validators;
+
+public class Shopping {
+
+	static Customer cust;
+	static BufferedReader input;
+
+	public static void main(String[] args) throws IOException {
+		input = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Welcome to Kanen Online Shopping!");
+		String option;
+		registerUser();
+		displayOptions();
+
+		option = readOption();
+		System.out.println(option);
+		switch (option) {
+		case "1":
+			break;
+		case "2":
+			displayProduct();
+			break;
+		case "3":
+			 checkBalance();
+			break;
+		case "4":
+			addBalance();
+			break;
+		case "5":
+			System.out.println("Logged out!");
+			break;
+		default:
+			break;
+		}
+
+	}
+
+	public static void registerUser() throws IOException {
+		Validators validate = new Validators();
+		System.out.println("Register now!");
+
+		String firstName;
+		String lastName;
+		String userName;
+		String emailAddress;
+		String mobileNumber;
+		double balance;
+		System.out.println("Enter your first name: ");
+		firstName = input.readLine();
+		System.out.println("Enter your last name: ");
+		lastName = input.readLine();
+		System.out.println("Enter a user name: ");
+		userName = input.readLine();
+		do {
+			System.out.println("Enter your email address: ");
+			emailAddress = input.readLine();
+		} while (!validate.checkEmail(emailAddress));
+		do {
+			System.out.println("Enter your mobile number: ");
+			mobileNumber = input.readLine();
+		} while (!validate.checkPhone(mobileNumber));
+
+		System.out.println("Enter your balance: ");
+		balance = Double.parseDouble(input.readLine());
+		cust = new Customer(1, firstName, lastName, userName, emailAddress,
+				mobileNumber, balance);
+
+		System.out.println();
+		System.out.println(cust.toString());
+		System.out.println();
+	}
+
+	public static void placeOrder() {
+
+	}
+
+	public static void addBalance() {
+		System.out.print("How much balance will you add?: $");
+		Scanner input = new Scanner(System.in);
+		int amount = 0;
+		amount = input.nextInt();
+
+		cust.setBalance(amount + cust.getBalance());
+		System.out.println(cust.getBalance());
+
+	}
+
+	public static void displayOptions() {
+
+		System.out.println("Please select transaction: [1-5]");
+		System.out.println("[1] Shop Now!");
+		System.out.println("[2]  Check our products!");
+		System.out.println("[3]  Check your balance.");
+		System.out.println("[4]  Deposit additional balance.");
+		System.out.println("[5]  Logout.");
+
+	}
+
+	public static String readOption() throws IOException {
+		boolean inputValid = false;
+		String choiceStr = "";
+
+		do {
+			choiceStr = input.readLine();
+			if (choiceStr.equals("1") || choiceStr.equals("2")
+					|| choiceStr.equals("3") || choiceStr.equals("4")
+					|| choiceStr.equals("5")) {
+				inputValid = true;
+			} else {
+				System.out
+						.println("Please select a number between [1-5] only.");
+			}
+		} while (!inputValid);
+
+		return choiceStr;
+
+	}
+
+	public static void checkBalance() {
+		
+		System.out.println("Current Balance: " + cust.getBalance());
+	}
+
+	public static void displayProduct() {
+
+		
+	}
+
+}

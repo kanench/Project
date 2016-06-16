@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.oocl.mnlbc.group3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author KANENCH
+ *
+ */
+public class Warehouse {
+	
+	private List<Product> productSelection;
+
+	public Warehouse(){
+		productSelection = new ArrayList<Product>();
+	}
+	
+	public void initProducts(){
+		
+	}
+	public List<Product> getProductSelection() {
+		return productSelection;
+	}
+
+	public void setProductSelection(List<Product> productSelection) {
+		this.productSelection = productSelection;
+	}
+	
+    
+	
+}

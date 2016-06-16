@@ -1,0 +1,16 @@
+package com.oocl.mnlbc.group3;
+
+public class Customer {
+	
+    private int customerId;
+	private String firstName;
+	private String lastName;
+	private String username;
+	private String mobileNumber;
+	
+	
+	private double balance;
+	
+
+
+}

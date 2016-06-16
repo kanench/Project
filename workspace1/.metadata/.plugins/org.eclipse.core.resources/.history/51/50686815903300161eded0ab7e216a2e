@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.oocl.mnlbc.group3;
+
+/**
+ * Product Model Class
+ * 
+ * @author YUME
+ * @author2 Group3
+ * @version 1
+ */
+public class Product {
+
+}
