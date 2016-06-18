@@ -373,3 +373,19 @@
 2016-06-16 16:54:49,178 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace1\myapp-web\my-app-web1\src\main\resources
 2016-06-16 16:54:49,179 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-06-16 16:54:49,179 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\workspace1\myapp-web\my-app-web1\src\test\resources
+2016-06-17 14:45:47,475 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-17 14:45:47,475 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\TestCase\src\main\resources
+2016-06-17 14:45:47,476 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-17 14:45:47,477 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\TestCase\src\test\resources
+2016-06-18 12:22:43,281 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-18 12:22:43,282 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\HelloWorld\src\main\resources
+2016-06-18 12:22:43,283 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-18 12:22:43,284 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\HelloWorld\src\test\resources
+2016-06-18 12:22:43,315 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-18 12:22:43,315 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\TestCase\src\main\resources
+2016-06-18 12:22:43,316 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-06-18 12:22:43,316 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\TestCase\src\test\resources
+2016-06-18 12:22:44,411 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-18 12:22:44,412 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\HelloWorld\src\main\resources
+2016-06-18 12:22:44,419 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-06-18 12:22:44,420 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My Documents\Project\workspace1\HelloWorld\src\test\resources

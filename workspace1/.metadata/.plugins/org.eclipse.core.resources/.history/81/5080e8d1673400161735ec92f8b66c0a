@@ -1,0 +1,5 @@
+package Weekday;
+
+public enum WeekDay {
+
+}

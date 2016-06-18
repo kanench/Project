@@ -1,0 +1,29 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+
+public class AppComputeVol {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BigDecimal volume;
+		int radius;
+		final double PI = 3.14159;
+		Scanner scan = new Scanner(System.in);
+		radius = scan.nextInt();
+		
+		System.out.println("Volume Calculator (Sphere)");
+		System.out.println("Enter Radius: ");
+		
+		volume = computeVolume((int) radius);
+	}
+	public static BigDecimal computeVolume(int r){
+		BigDecimal v;
+		
+		
+		v = (4/3) * Math.PI * Math.pow(r, 3);
+		return v;
+		
+	}
+
+}

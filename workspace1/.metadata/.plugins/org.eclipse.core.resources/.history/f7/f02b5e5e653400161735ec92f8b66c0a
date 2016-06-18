@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
+
+
+public class EnumApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner scan;
+		DateFormat  dateformat;
+		String today;
+		WeekDay day;
+		
+		dateformat = new SimpleDateFormat("EEE, yyyy.dd.mm HH:MM:sS");
+		Date date = new Date();
+		today = dateformat.format(date);
+		System.out.println(today);
+		
+		dateformat = new SimpleDateFormat("EEE, yyyy.dd.mm HH:MM:sS");
+		Calendar calendar = Calendar.getInstance();
+		today = dateformat.format(calendar.getTime());
+		System.out.println(today);
+		
+		
+		scan = new Scanner(System.in);
+		
+		
+		
+		
+		
+	}
+
+}

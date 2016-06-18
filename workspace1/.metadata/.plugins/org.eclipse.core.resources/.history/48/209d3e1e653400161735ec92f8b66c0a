@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class IOStreamApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
+		Scanner scan = new Scanner(System.in);
+		Console c = System.console();
+		char[] input;
+		
+		
+		System.out.println("Type: ");
+		input = c.readPassword();
+			
+		
+	}
+}

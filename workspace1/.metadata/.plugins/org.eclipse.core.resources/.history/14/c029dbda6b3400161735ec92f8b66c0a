@@ -1,0 +1,27 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+
+public class AppComputeVol {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BigDecimal volume = new BigDecimal(0);
+		double radius;
+		final double PI = 3.14159;
+		Scanner scan = new Scanner(System.in);
+		radius = scan.nextInt();
+		
+		System.out.println("Volume Calculator (Sphere)");
+		System.out.println("Enter Radius: ");
+		
+		volume = computeVolume((double) radius);
+		System.out.println("Volume of the Ball is : " + volume);
+	}
+	public static BigDecimal computeVolume(double r){
+		BigDecimal v = new BigDecimal((4/3) * Math.PI * Math.pow(r,3));
+		return v;
+		
+	}
+
+}
